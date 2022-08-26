@@ -25,7 +25,7 @@ The unit of diversion is a cookie, although if the student enrolls in the free t
 </p>
 
 ```diff
--Flow of users on Udacity Course Description Page	
+Flow of users on Udacity Course Description Page	
 ```
 
 ### Metric Choice
