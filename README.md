@@ -18,7 +18,10 @@ The hypothesis was that this might set clearer expectations for students upfront
 
 The unit of diversion is a cookie, although if the student enrolls in the free trial, they are tracked by user-id from that point forward. The same user-id cannot enroll in the free trial twice. For users that do not enroll, their user-id is not tracked in the experiment, even if they were signed in when they visited the course overview page.
 
-<img src="img/flow.png" alt="User Flow">
+<br>
+
+<img src="img/flow.png" alt="User Flow" style="text-align:center" width="50%">
+
 
 ### Metric Choice
 
