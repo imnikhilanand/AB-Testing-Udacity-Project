@@ -53,9 +53,24 @@ The unit of diversion is a cookie, although if the student enrolls in the free t
 
 ### Measuring Standard deviation
 
+For each of the metric you selected as an evaluation metric, make an analytical estimate of its standard deviation, given a sample size of 5000 cookies visting the course overview page. Enter each estimate in the appropriate box to 4 decimal places.
+
+The following metric values were provided by Udacity
+
+<table>
+	<tr><th>Metric</th><th>Standar Deviation</th></tr>
+	<tr><td>Number of Cookies</td><td>40,000</td></tr>
+	<tr><td>Number of user-ids</td><td>660</td></tr>
+	<tr><td>Number of clicks on 'Start Free Trial'</td><td>3200</td></tr>
+	<tr><td>Click through Probability on 'Start Free Trial'</td><td>0.08</td></tr>
+	<tr><td>Gross Conversion</td><td>0.2062</td></tr>
+	<tr><td>Retention</td><td>0.53</td></tr>
+	<tr><td>Net Conversion</td><td>0.1093</td></tr>
+</table>
 
 
 ## Sizing
+
 
 ### Number of Samples vs. Power
 
