@@ -58,14 +58,14 @@ For each of the metric you selected as an evaluation metric, make an analytical 
 The following metric values were provided by Udacity
 
 <table>
-	<tr><th>Metric</th><th>Standar Deviation</th></tr>
-	<tr><td>Number of Cookies</td><td>40,000</td></tr>
-	<tr><td>Number of user-ids</td><td>660</td></tr>
-	<tr><td>Number of clicks on 'Start Free Trial'</td><td>3200</td></tr>
-	<tr><td>Click through Probability on 'Start Free Trial'</td><td>0.08</td></tr>
-	<tr><td>Gross Conversion</td><td>0.2062</td></tr>
-	<tr><td>Retention</td><td>0.53</td></tr>
-	<tr><td>Net Conversion</td><td>0.1093</td></tr>
+	<tr><th>Metric</th><th>Values</th><th>Min Values</th></tr>
+	<tr><td>Number of Cookies</td><td>40,000</td><td>3000</td></tr>
+	<tr><td>Number of user-ids</td><td>660</td><td>50</td></tr>
+	<tr><td>Number of clicks on 'Start Free Trial'</td><td>3200</td><td>240</td></tr>
+	<tr><td>Click through Probability on 'Start Free Trial'</td><td>0.08</td><td>0.01</td></tr>
+	<tr><td>Gross Conversion</td><td>0.2062</td><td>0.01</td></tr>
+	<tr><td>Retention</td><td>0.53</td><td>0.01</td></tr>
+	<tr><td>Net Conversion</td><td>0.1093</td><td>0.01</td></tr>
 </table>
 
 
