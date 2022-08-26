@@ -24,14 +24,20 @@ The unit of diversion is a cookie, although if the student enrolls in the free t
 	<img src="img/flow.png" alt="User Flow" width="70%">
 </p>
 
-*Fig 1. Flow of users on Udacity Course Description Page*
-
 
 ### Metric Choice
 
 **Choosing Invariant Metrics**
 
+1. Number of Cookies: Since the unit of diversion is Cookies, the number of cookies in both control and treatment groups will remain same.
+2. Number of Clicks: Since the number of cookies that clicks the start free trail is before the "Free trail screener", the number of clicks in the two groups will remain approximately same. 
+3. Click through Probability: This metric is the combination of the above two metric. So it will also remain the same.
+
 **Choosing Evaluation Metrics**
+
+1. Gross Conversion: Since the two different groups have same number of unique cookies, but the number of cookies checking out would be different as they will be shown Trigger.
+2. Retention: Since the two different groups will have different behavior as the users in treatment groups would be more determined to complete the course and will remain enrolled. So the retention rate would be higher for the treatment group users.
+3. Net Conversion: Since the two groups have different behavior after joining the free training, the number of users who will remain enrolled past 14 days will be higher in the treatment group.
 
 
 ### Measuring Standard deviation
