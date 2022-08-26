@@ -22,8 +22,8 @@ The unit of diversion is a cookie, although if the student enrolls in the free t
 
 <p align="center">
 	<img src="img/flow.png" alt="User Flow" width="70%">
-**Fig 1. Flow of users on Udacity Course Description Page**
 </p>
+*Fig 1. Flow of users on Udacity Course Description Page*
 
 
 ### Metric Choice
