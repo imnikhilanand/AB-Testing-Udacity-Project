@@ -27,6 +27,17 @@ The unit of diversion is a cookie, although if the student enrolls in the free t
 
 ### Metric Choice
 
+<table>
+	<tr><th>Metric</th><th>Description</th></tr>
+	<tr><td>Number of Cookies</td><td>That is, number of unique cookies to view course overview page</td></tr>
+	<tr><td>Number of User-Ids</td><td>That is, number of users who enroll in the free trail</td></tr>
+	<tr><td>Number of Clicks</td><td>That is, number of unique cookies to click the "Start free trail" button (which happens before the free trail screener is trigger)</td></tr>
+	<tr><td>Click-through-Probability</td><td>That is, number of unique cookies to click the "Start free trail" button divided by the number of cookies to view the course overview page</td></tr>
+	<tr><td>Gross Conversion</td><td>That is, number of user-ids to complete checkout and enroll in the free trail divided by number of cookies to click the "Start free trail" button.</td></tr>
+	<tr><td>Retention</td><td>That is, number of user-ids to remain enrolled past the 14 day boundary (and thus make at least one payment) divided by number of user-ids to complete checkout</td></tr>
+	<tr><td>Net Conversion</td><td>That is, number of user-ids to remain enrolled past the 14 day boundary (and thus make atleast 1 payment) divided by the nuber of unique cookies to click the "Start free trail" button</td></tr>
+</table>
+
 **Choosing Invariant Metrics**
 
 1. Number of Cookies: Since the unit of diversion is Cookies, the number of cookies in both control and treatment groups will remain same.
