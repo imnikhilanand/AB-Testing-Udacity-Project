@@ -65,8 +65,23 @@ The following metric values were provided by Udacity
 	<tr><td>Click through Probability on 'Start Free Trial'</td><td>0.08</td><td>0.01</td></tr>
 	<tr><td>Gross Conversion</td><td>0.2062</td><td>0.01</td></tr>
 	<tr><td>Retention</td><td>0.53</td><td>0.01</td></tr>
-	<tr><td>Net Conversion</td><td>0.1093</td><td>0.01</td></tr>
+	<tr><td>Net Conversion</td><td>0.1093</td><td>0.0075</td></tr>
 </table>
+
+Since, the given sample size of the experiment is 5000 cookies, we can calculate the standard deviation of the probabilites on the scaled data of 5000 cookies. We will be estimating how for the sample population likely to be from the mean proportion.
+
+<table>
+	<tr><th>Metric</th><th>Values</th><th>Scaled Estimates</th><th>Min Values</th></tr>
+	<tr><td>Number of Cookies</td><td>40,000</td><td>5000</td><td>3000</td></tr>
+	<tr><td>Number of user-ids</td><td>660</td><td>400</td><td>50</td></tr>
+	<tr><td>Number of clicks on 'Start Free Trial'</td><td>82.5</td><td>3200</td><td>240</td></tr>
+	<tr><td>Click through Probability on 'Start Free Trial'</td><td>0.08</td><td>NA</td><td>0.01</td></tr>
+	<tr><td>Gross Conversion</td><td>0.2062</td><td>NA</td><td>0.01</td></tr>
+	<tr><td>Retention</td><td>0.53</td><td>NA</td><td>0.01</td></tr>
+	<tr><td>Net Conversion</td><td>0.1093</td><td>NA</td><td>0.0075</td></tr>
+</table>
+
+
 
 
 ## Sizing
