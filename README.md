@@ -46,9 +46,9 @@ The unit of diversion is a cookie, although if the student enrolls in the free t
 
 **Choosing Evaluation Metrics**
 
-1. Gross Conversion: Since the two different groups have same number of unique cookies, but the number of cookies checking out would be different as they will be shown Trigger.
-2. Retention: Since the two different groups will have different behavior as the users in treatment groups would be more determined to complete the course and will remain enrolled. So the retention rate would be higher for the treatment group users.
-3. Net Conversion: Since the two groups have different behavior after joining the free training, the number of users who will remain enrolled past 14 days will be higher in the treatment group.
+1. Gross Conversion: (# no of user ids enrolled/# of unique daily cookies to click "start free trial" button) Since the two different groups have same number of unique cookies, but the number of cookies checking out would be different as they will be shown Trigger.
+2. Retention: (# no of user ids paid/# no of user ids that enrolled) Since the two different groups will have different behavior as the users in treatment groups would be more determined to complete the course and will remain enrolled. So the retention rate would be higher for the treatment group users.
+3. Net Conversion: (# no of user ids paid/# of unique daily cookies to click "start free trial" button) Since the two groups have different behavior after joining the free training, the number of users who will remain enrolled past 14 days will be higher in the treatment group.
 
 
 ### Measuring Standard deviation
@@ -79,6 +79,25 @@ Since, the given sample size of the experiment is 5000 cookies, we can calculate
 	<tr><td>Gross Conversion</td><td>0.2062</td><td>NA</td><td>0.01</td></tr>
 	<tr><td>Retention</td><td>0.53</td><td>NA</td><td>0.01</td></tr>
 	<tr><td>Net Conversion</td><td>0.1093</td><td>NA</td><td>0.0075</td></tr>
+</table>
+
+We can calculate standard deviation analytically by assuming binomial distribution for Gross Conversion, Net Conversion and Retension. Since n is very large, we can assume this binomial distribution to be close to normal distribution due to Central Limit Theorem. 
+
+To approximate a binomial distribution as a normal distribution, n*p and n*(1-p) should be greater than 5.
+
+1. Gross Conversion: 400*0.2062>5 and 400*(1-0.2062)>5
+  
+2. Retention: 82.5*0.53>5 and 82.5*(1-0.53)>5
+
+3. Net Conversion: 400*0.109>5 and 400*(1-0.1093)>5
+
+Since all the three metrics are large enough to consider the distribution a Normal distribution, we will be 
+
+<table>
+	<tr><th>Metric</th><th>Values</th><th>Standard Error</th></tr>
+	<tr><td>Gross Conversion</td><td>0.2062</td><td>0.02022</td></tr>
+	<tr><td>Retention</td><td>0.53</td><td>0.05511</td></tr>
+	<tr><td>Net Conversion</td><td>0.1093</td><td>0.0156</td></tr>
 </table>
 
 
