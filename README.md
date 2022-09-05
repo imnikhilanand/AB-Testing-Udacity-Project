@@ -126,6 +126,17 @@ Since, the daily traffic on the website is 40,000, total number of Days for the 
 
 ## Experimental Analysis
 
+So, if we perform the entire experiment and try to measure all the three metric we will be rquiring ~119 days to get the results. This would be the case when we will divert the entire traffic i.e. 100%. If we track the metrics - Gross Conversion and Net Conversion, it will be feasible. 
+
+There are two major problems with measuring Retention:
+
+1. We cannot perform any other expriment during the same period.
+
+2. There are business risks for performing expriment for that long.
+
+Net Conversion is product of Gross Conversion and Retention, we can make inference about retention from these two metrics.
+
+There are risks associated with running experiment for too long we can divert some proportion of traffic and increase the duration of the expriment.
 
 ### Sanity Checks
 
