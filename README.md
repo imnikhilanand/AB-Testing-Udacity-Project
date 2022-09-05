@@ -114,6 +114,15 @@ Net Conversion: 27411 * 2 * 40000 / 3200 = 685275
 
 ### Duration vs. Exposure
 
+Since, the daily traffic on the website is 40,000, total number of Days for the following three metric will be:
+
+<table>
+	<tr><th>Metric</th><th>Days Required</th></tr>
+	<tr><td>Gross Conversion</td><td>= 645750/40000 = ~17</td></tr>
+	<tr><td>Retention</td><td>= 4741213/40000 = ~119 </td></tr>
+	<tr><td>Net Conversion</td><td>= 685275/40000 = ~18</td></tr>
+</table>
+
 
 ## Experimental Analysis
 
