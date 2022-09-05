@@ -140,6 +140,17 @@ There are risks associated with running experiment for too long we can divert so
 
 ### Sanity Checks
 
+Sanity check is performed to check if the number of participants in the two groups are divided in same proportion. To perfrom this test we have to check if the difference in the number of the two groups should not be signficantly different from 0. The assignment of users in the two groups is random which means we can assume the users in contorl (or treatment) to be a binomial distributioin with a probability of 0.5. As the value of n is too large, we can assume then distribution to be normal. A two proportion z-test will be performed to evaluate this.
+
+
+For the invariance metrics:
+
+<table>
+	<tr><th>Metric</th><th>CI lower</th><th>CI Upper</th><th>Observed</th><th>Passed</th></tr>
+	<tr><td>Pageviews</td><td>0.4988</td><td>0.5011</td><td>0.5006</td><td>Yes</td></tr>
+	<tr><td>Clicks</td><td>0.4958</td><td>0.5041</td><td>0.5004</td><td>Yes</td></tr>
+</table>
+
 
 ### Result Analysis
 
