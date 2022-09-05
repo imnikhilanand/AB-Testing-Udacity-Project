@@ -102,6 +102,15 @@ To approximate a binomial distribution as a normal distribution, n*p and n*(1-p)
 
 ### Number of Samples vs. Power
 
+The alpha value for the experiment is 0.05 and power for the expriment is given as 0.80 (by setting beta to 0.2)
+
+Using calculator we can estimate the total pageview to be:
+
+Gross Conversion: 25830 * 2 * 40000 / 3200 = 645750 
+
+Retention: 39115 * 2 * 40000 / 660 = 4741213
+
+Net Conversion: 27411 * 2 * 40000 / 3200 = 685275
 
 ### Duration vs. Exposure
 
