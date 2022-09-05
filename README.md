@@ -149,17 +149,44 @@ For the invariance metrics:
 	<tr><th>Metric</th><th>CI lower</th><th>CI Upper</th><th>Observed</th><th>Passed</th></tr>
 	<tr><td>Pageviews</td><td>0.4988</td><td>0.5011</td><td>0.5006</td><td>Yes</td></tr>
 	<tr><td>Clicks</td><td>0.4958</td><td>0.5041</td><td>0.5004</td><td>Yes</td></tr>
+	<tr><td>Click-Through Probability</td><td>-0.00129</td><td>0.00129</td><td>0.0000566</td><td>Yes</td></tr>
+</table>
+
+### Result Analysis
+
+Similar to the Click-Through Probability, we have to compute test the hypothesis for the evaluation metrics. This time we will compute the confidence interval of the difference between the two groups. At the end we will check if the observed difference is significant or not.
+
+Recall out hypothesis:
+
+- H<sub>0</sub>: CG<sub>treatment</sub> = CG<sub>control</sub>
+- H<sub>1</sub>: CG<sub>treatment</sub> != CG<sub>control</sub>
+
+
+- H<sub>0</sub>: CN<sub>treatment</sub> = CN<sub>control</sub>
+- H<sub>1</sub>: CN<sub>treatment</sub> != CN<sub>control</sub>
+
+
+Since, the time required to pay for the trail is 14 days, we can estimate the expriment for 37-14 = 23 days. So, we will be taking only that data to calculate the total sample size.
+
+<table>
+	<tr><th>Metric</th><th>CI lower</th><th>CI Upper</th><th>d</th><th>D min</th><th>Statistically Significant?</th><th>Practically Significant?</th></tr>
+	<tr><td>Gross Conversion</td><td>-0.0291</td><td>-0.0119</td><td>-0.0205</td><td>-0.01</td><td>Yes</td><td>Yes</td></tr>
+	<tr><td>Net Conversion</td><td>-0.01160</td><td>0.0018</td><td>-0.0048</td><td>No</td><td>No</td></tr>
 </table>
 
 
-### Result Analysis
 
 
 **Effective Test Size**
 
+
+
 **Sign Test**
 
+
+
 **Summary**
+
 
 
 ### Recommendation

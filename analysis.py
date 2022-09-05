@@ -96,28 +96,70 @@ p+(stats.norm.ppf(1-alpha/2)*standardError(n,p))
 # actual 
 p_actual = control['Clicks'].sum()/n
 
+# lets calculate CTP for thw two groups
+CTP_control = control['Clicks'].sum()/control['Pageviews'].sum()
+CTP_experiment = experiment['Clicks'].sum()/experiment['Pageviews'].sum()
+
+# standard deviation of control group
+S_control = (CTP_control*(1-CTP_control))**0.5
+# standard deviation of treatment group
+S_experiment = (CTP_experiment*(1-CTP_experiment))**0.5
+
+# pooled standard deviation
+SE_pooled = ((S_control)**2/control['Pageviews'].sum() + (S_experiment)**2/experiment['Pageviews'].sum())**0.5
+
+# confidence interval
+0 - (stats.norm.ppf(1-alpha/2)*SE_pooled)
+0 + (stats.norm.ppf(1-alpha/2)*SE_pooled)
+
+# actial 
+p_actual = CTP_experiment - CTP_control
 
 
+""" Effective test size """
 
-for i,j in zip(["C", "CL"], ["Pageviews", "Clicks"]):
-    print(/[j]," - ",experiment[j])
+# total size of the Pageviews in both control and treatment groups
+total_size = control.iloc[:23]['Pageviews'].sum() + experiment.iloc[:23]['Pageviews'].sum()
 
+''' Gross Conversion '''
 
+# conversion rate in control group for Gross Conversion
+conv_control = control.iloc[:23]['Enrollments'].sum()/control.iloc[:23]['Clicks'].sum()
+conv_treatment = experiment.iloc[:23]['Enrollments'].sum()/experiment.iloc[:23]['Clicks'].sum()
 
+# evaluating the difference between the two rates
+difference_gross_conv = conv_treatment - conv_control
 
+# calculating the standard deviation of both control and treatment gorups
+S_control = (conv_control*(1-conv_control))**0.5
+S_treatment = (conv_treatment*(1-conv_treatment))**0.5
 
-stats.norm.ppf(1-(0.05/2))
+# evaluating the pooled standard deviation
+SE_pooled = (S_control**2/control.iloc[:23]['Clicks'].sum()+S_treatment**2/experiment.iloc[:23]['Clicks'].sum())**0.5
 
+# calculating the difference
+difference_gross_conv - (stats.norm.ppf(1-alpha/2)*SE_pooled)
+difference_gross_conv + (stats.norm.ppf(1-alpha/2)*SE_pooled)
 
+''' Net Conversion '''
 
+# conversion rate in control group for Gross Conversion
+conv_control = control.iloc[:23]['Payments'].sum()/control.iloc[:23]['Clicks'].sum()
+conv_treatment = experiment.iloc[:23]['Payments'].sum()/experiment.iloc[:23]['Clicks'].sum()
 
+# evaluating the difference between the two rates
+difference_net_conv = conv_treatment - conv_control
 
+# calculating the standard deviation of both control and treatment gorups
+S_control = (conv_control*(1-conv_control))**0.5
+S_treatment = (conv_treatment*(1-conv_treatment))**0.5
 
+# evaluating the pooled standard deviation
+SE_pooled = (S_control**2/control.iloc[:23]['Clicks'].sum()+S_treatment**2/experiment.iloc[:23]['Clicks'].sum())**0.5
 
-
-
-
-
+# calculating the difference
+difference_gross_conv - (stats.norm.ppf(1-alpha/2)*SE_pooled)
+difference_gross_conv + (stats.norm.ppf(1-alpha/2)*SE_pooled)
 
 
 
