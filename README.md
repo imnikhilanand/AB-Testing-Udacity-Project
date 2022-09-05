@@ -85,13 +85,11 @@ We can calculate standard deviation analytically by assuming binomial distributi
 
 To approximate a binomial distribution as a normal distribution, n*p and n*(1-p) should be greater than 5.
 
-1. Gross Conversion: 400*0.2062>5 and 400*(1-0.2062)>5
+1. Gross Conversion: 400 * 0.2062 > 5 and 400 * (1-0.2062) > 5
   
-2. Retention: 82.5*0.53>5 and 82.5*(1-0.53)>5
+2. Retention: 82.5 * 0.53 > 5 and 82.5 * (1-0.53) > 5
 
-3. Net Conversion: 400*0.109>5 and 400*(1-0.1093)>5
-
-Since all the three metrics are large enough to consider the distribution a Normal distribution, we will be 
+3. Net Conversion: 400 * 0.109 > 5 and 400 * (1-0.1093) > 5
 
 <table>
 	<tr><th>Metric</th><th>Values</th><th>Standard Error</th></tr>
@@ -100,23 +98,22 @@ Since all the three metrics are large enough to consider the distribution a Norm
 	<tr><td>Net Conversion</td><td>0.1093</td><td>0.0156</td></tr>
 </table>
 
-
-
-
 ## Sizing
-
 
 ### Number of Samples vs. Power
 
 
 ### Duration vs. Exposure
 
+
 ## Experimental Analysis
 
 
 ### Sanity Checks
 
+
 ### Result Analysis
+
 
 **Effective Test Size**
 
