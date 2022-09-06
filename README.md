@@ -171,7 +171,7 @@ Since, the time required to pay for the trail is 14 days, we can estimate the ex
 <table>
 	<tr><th>Metric</th><th>CI lower</th><th>CI Upper</th><th>d</th><th>D min</th><th>Statistically Significant?</th><th>Practically Significant?</th></tr>
 	<tr><td>Gross Conversion</td><td>-0.0291</td><td>-0.0119</td><td>-0.0205</td><td>-0.01</td><td>Yes</td><td>Yes</td></tr>
-	<tr><td>Net Conversion</td><td>-0.01160</td><td>0.0018</td><td>-0.0048</td><td>No</td><td>No</td></tr>
+	<tr><td>Net Conversion</td><td>-0.01160</td><td>0.0018</td><td>-0.0048</td><td>0.0075</td><td>No</td><td>No</td></tr>
 </table>
 
 
