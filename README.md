@@ -175,11 +175,9 @@ Since, the time required to pay for the trail is 14 days, we can estimate the ex
 </table>
 
 
-
-
 **Effective Test Size**
 
-
+From the above calculations you can observe that we need atleast 685,275 pageviews for the experiments. But the total number of pageviews we are getting is 423,525. We cannot do much about it at this point of time.
 
 **Sign Test**
 
