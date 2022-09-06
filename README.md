@@ -149,7 +149,7 @@ For the invariance metrics:
 	<tr><th>Metric</th><th>CI lower</th><th>CI Upper</th><th>Observed</th><th>Passed</th></tr>
 	<tr><td>Pageviews</td><td>0.4988</td><td>0.5011</td><td>0.5006</td><td>Yes</td></tr>
 	<tr><td>Clicks</td><td>0.4958</td><td>0.5041</td><td>0.5004</td><td>Yes</td></tr>
-	<tr><td>Click-Through Probability</td><td>-0.00129</td><td>0.00129</td><td>0.0000566</td><td>Yes</td></tr>
+	<tr><td>Click-Through Probability</td><td>-0.00129</td><td>0.00129</td><td>0.0000566</td><td>No</td><td>No</td></tr>
 </table>
 
 ### Result Analysis
