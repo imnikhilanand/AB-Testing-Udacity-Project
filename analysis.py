@@ -61,9 +61,6 @@ standard_error(82, 0.53)
 # net conversion standard error
 standard_error(400, 0.1093)
 
-
-
-
 """ Sanity Check """
 
 #set alpha and p_hat
@@ -163,13 +160,38 @@ difference_gross_conv + (stats.norm.ppf(1-alpha/2)*SE_pooled)
 
 
 
+''' Performing the sign test '''
 
+# function to assign sign
+def assign_sign(num):
+    if int(num) > 0:
+        return '+'
+    elif int(num) < 0:
+        return '-'
+    else:
+        return '0'
 
+# performing sign test on the treatment and control groups
+control['exp_num'] = experiment['Pageviews']
+control['sign_diff'] = control['exp_num'] - control['Pageviews']
+control['sign_diff_type'] = control['sign_diff'].apply(lambda x: assign_sign(x))
 
+control.groupby('sign_diff_type').agg({'sign_diff_type':'count'})
 
+# performing the hypothesis test to see the difference between the sign test 
 
+p_positive = 14/36
+p_negative = 22/36
 
+S_positive = (p_positive*(1-p_positive))**0.5
+S_negative = (p_negative*(1-p_negative))**0.5
 
+S_pooled = ((S_positive**2)/14+(S_negative**2)/22)**0.5
+
+difference = p_positive - p_negative
+
+difference + stats.norm.ppf(1-alpha/2)*S_pooled
+difference - stats.norm.ppf(1-alpha/2)*S_pooled
 
 
 

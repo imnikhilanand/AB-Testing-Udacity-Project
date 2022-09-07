@@ -181,13 +181,24 @@ From the above calculations you can observe that we need atleast 685,275 pagevie
 
 **Sign Test**
 
+From the sign test for number of pageviews for both the groups, we can observe that the :
+
+To be continued
 
 
 **Summary**
-
-
+The experience was conduccted for 23 days. From the above analysis of AB test, we can observe that Gross conversion have reduced significantly but not the Net Conversion rate. Though it had reduced a bit. We were able to estimate the change only in two of the metric, as Retention rate measurment might require ~119 dasys to evaluate.
 
 ### Recommendation
+
+From the above analysis, I would recommend Gross Conversion has dropped that means the enrollment of the users have dropped significantly, both statistically and practically. It dropped around 2.6%.  
+
+Though we cannot reject the null hypothesis for this project, bu the Net conversion rate has dropped. It would mostly be between -1.16% and 0.19%.
+
+Given the results, we can assume the introduction of 'Free Trail Screener' may indeed help to set clearer expectations for students upfront. However the results for Net Convetrsion is incompatible with the assumptions and business needs. I would recommend not to implement the changes as it might lower the sales of the paid courses.
+
+
+
 
 
 
