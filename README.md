@@ -187,6 +187,7 @@ To be continued
 
 
 **Summary**
+
 The experience was conduccted for 23 days. From the above analysis of AB test, we can observe that Gross conversion have reduced significantly but not the Net Conversion rate. Though it had reduced a bit. We were able to estimate the change only in two of the metric, as Retention rate measurment might require ~119 dasys to evaluate.
 
 ### Recommendation
